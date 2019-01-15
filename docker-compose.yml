@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: .\web\
+    links:
+      - bd
+      - bd:database
+    ports:
+      - "4000:80"
+    command: bash -c "/etc/init.d/lighttpd restart && tail -F keep_opened"
+  bd:
+    build: .\bd\
+    ports: 
+      - "3306:3306"
+    command: bash -c "/etc/init.d/mysql start && mysql < /mysql/db.sql && tail -F keep_opened"
