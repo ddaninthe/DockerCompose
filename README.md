@@ -12,4 +12,5 @@ La ligne _**port**_ permet de mapper les ports du container aux ports de la mach
 Ainsi, pour se connecter au site web il suffit de taper "_localhost:4000_" sur la machine hôte.
 
 ## Problèmes
-Cependant la requête SQL renvoie une erreur 403 que l'on a pas réussi à régler, malgré nos efforts. Les log par défaut étant **user: root**, sans mot de passe.
+Cependant la requête SQL du serveur Web à la BDD renvoie une erreur 403 que l'on a pas réussi à régler, malgré nos efforts. Les log par défaut étant **user: root**, sans mot de passe.
+Nous avons préféré rendre un TP sur lequel nous avons travaillé qui ne fonctionne pas, plutôt qu'une solution fonctionnelle copiée sur internet qui ne nous aurait rien apporté.

@@ -3,7 +3,6 @@ services:
   web:
     build: .\web\
     links:
-      - bd
       - bd:database
     ports:
       - "4000:80"
